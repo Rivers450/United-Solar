@@ -11,7 +11,6 @@ trigger email_related_contact on Contact (before insert, before update) {
             accountContactEmailsMap.get(con.AccountId).add(con.Email);
         }
     }
-
     Map<Id, Account> accountsMap = new Map<Id, Account>([SELECT Id, (SELECT Email FROM Contacts WHERE Id != :Trigger.new AND Email != null) FROM Account WHERE Id IN :accountIds]);
 
     for(Contact con : Trigger.new) {
