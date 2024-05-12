@@ -1,0 +1,16 @@
+<apex:page standardController="Opportunity">
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <apex:pageBlock title="Create New Opportunity">
+        <apex:form >
+            <apex:pageBlockSection >
+                <apex:inputField value="{!Opportunity.name}" required="true"></apex:inputField>
+                <apex:inputField value="{!Opportunity.Amount}" required="true"></apex:inputField>
+                <apex:inputField value="{!Opportunity.StageName}" required="true"></apex:inputField>
+                <apex:inputField value="{!Opportunity.CloseDate}" required="true"></apex:inputField>
+                <apex:inputField value="{!Opportunity.Type}" required="false"></apex:inputField>
+            </apex:pageBlockSection>
+            <apex:commandButton value="Save Opportunity Record" action="{!save}" />
+        </apex:form>
+    </apex:pageBlock>
+    <apex:outputLink value="apex/OpportunityVFPage">Back to Opportunity List</apex:outputLink>
+</apex:page>

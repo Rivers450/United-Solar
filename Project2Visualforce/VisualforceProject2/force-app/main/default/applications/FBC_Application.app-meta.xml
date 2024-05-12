@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>FBC_Logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>Custom applicatoin for FBC Office Supplies</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>FBC Application</label>
+    <navType>Standard</navType>
+    <tabs>Visualforce_Home_Page</tabs>
+    <tabs>Visualforce_Opportunity_Page</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>FBC_Application_UtilityBar</utilityBar>
+</CustomApplication>

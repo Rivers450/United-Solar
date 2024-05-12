@@ -1,0 +1,27 @@
+<apex:page standardController="Account" recordSetVar="accs">
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <apex:form >
+        <apex:pageBlock >
+            <apex:outputLink value="apex/AccountVFCreate">
+                    Create a New Account
+            </apex:outputLink>
+            <apex:pageBlockSection >
+                <apex:pageBlockTable value="{! accs}" var="acc">
+                     <apex:column >
+                        <apex:outputLink value="apex/AccountVFRecord">
+                            {! acc.name}
+                            <apex:param name="id" value="{!acc.id}" />
+                        </apex:outputLink>
+                         
+                    </apex:column>
+                    <apex:column value="{! acc.type}" />
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <apex:outputLink value="apex/Home">Back to Home Page</apex:outputLink>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Previous" action="{!Previous}" />
+                <apex:commandButton value="Next" action="{!next}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

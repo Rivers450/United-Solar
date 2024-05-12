@@ -1,0 +1,17 @@
+<apex:page >
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <br/>
+    <h1>Welcome to FBC Home page</h1>
+    <br/>
+
+    <h2>Please click on a link below to navigate to our Visualforce Pages</h2>
+    <apex:pageBlock title="Visualforce Pages">
+        <apex:outputLink value="apex/OpportunityVFPage">Opportunity Records List</apex:outputLink><br/>
+        <apex:outputLink value="apex/AccountVfPage">Account Records List</apex:outputLink> <br/>
+        <apex:outputLink value="apex/ContactVfPage">Contact Records List</apex:outputLink>
+
+    </apex:pageBlock>
+
+
+
+</apex:page>

@@ -1,0 +1,20 @@
+<apex:page standardController="Opportunity">
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <apex:pageBlock title="{! opportunity.name}">
+        <apex:form >
+            <apex:pageBlockSection >
+                <p> Owner ID: {! opportunity.OwnerId }</p>
+                <p> Opportunity Name: {! opportunity.Name }</p>
+                <p> Type: {! opportunity.Type }</p>
+                <p> Lead Source: {! opportunity.LeadSource }</p>
+                <p> Amount: {! opportunity.Amount }</p>
+                <p> Expected Revenue: {! opportunity.ExpectedRevenue }</p>
+                <p> Close Date: {! opportunity.CloseDate }</p>
+                <p> Stage: {! opportunity.StageName }</p>
+                <p> Probability: {! opportunity.Probability }</p>
+            </apex:pageBlockSection>
+            <apex:commandButton value="Delete Opportunity Record" action="{!delete}"/>
+        </apex:form>
+    </apex:pageBlock>
+    <apex:outputLink value="apex/OpportunityVFPage">Back to Opportunity List</apex:outputLink>
+</apex:page>
