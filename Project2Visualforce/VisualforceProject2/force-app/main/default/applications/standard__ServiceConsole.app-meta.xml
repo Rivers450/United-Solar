@@ -181,7 +181,11 @@
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
     <tabs>Visualforce_Opportunity_Page</tabs>
+    <tabs>Customer_Success_Story__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>Customer_Success_Story__c</tab>
+        </mappings>
         <mappings>
             <tab>Visualforce_Opportunity_Page</tab>
         </mappings>

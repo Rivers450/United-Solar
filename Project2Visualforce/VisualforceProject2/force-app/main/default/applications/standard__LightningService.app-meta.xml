@@ -18,9 +18,13 @@
     <tabs>standard-Problem</tabs>
     <tabs>standard-ChangeRequest</tabs>
     <tabs>Visualforce_Opportunity_Page</tabs>
+    <tabs>Customer_Success_Story__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Customer_Success_Story__c</tab>
+        </mappings>
         <mappings>
             <tab>Visualforce_Opportunity_Page</tab>
         </mappings>
