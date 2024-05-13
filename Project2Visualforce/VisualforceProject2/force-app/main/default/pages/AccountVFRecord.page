@@ -1,0 +1,17 @@
+<apex:page standardController="Account">
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <apex:pageBlock title="{! Account.name}">
+        <apex:form >
+            <apex:pageBlockSection >
+                <p> Owner ID: {! Account.OwnerId }</p>
+                <p> Account Name: {! Account.Name }</p>
+                <p> Account Type: {! Account.Type }</p>
+                <p> Account Phone: {! Account.Phone }</p>
+                <p> Customer Success Stories: {! Account.Num_Of_Success_Stories__c }</p>
+                <p> Account Industry: {! Account.Industry}</p>
+            </apex:pageBlockSection>
+            <apex:commandButton value="Delete Account Record" action="{!delete}"/>
+        </apex:form>
+    </apex:pageBlock>
+    <apex:outputLink value="apex/AccountVFPage">Back to Account List</apex:outputLink>
+</apex:page>

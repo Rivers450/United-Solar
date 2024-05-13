@@ -7,9 +7,9 @@
     <h2>Please click on a link below to navigate to our Visualforce Pages</h2>
     <apex:pageBlock title="Visualforce Pages">
         <apex:outputLink value="apex/OpportunityVFPage">Opportunity Records List</apex:outputLink><br/>
-        <apex:outputLink value="apex/AccountVfPage">Account Records List</apex:outputLink> <br/>
-        <apex:outputLink value="apex/ContactVfPage">Contact Records List</apex:outputLink>
-
+        <apex:outputLink value="apex/AccountVfPage">Account Records List</apex:outputLink><br/>
+        <apex:outputLink value="apex/LeadVFPage">Lead Records List</apex:outputLink><br/>
+        <apex:outputLink value="apex/ContactVFPage">Contact Records List</apex:outputLink>
     </apex:pageBlock>
 
 

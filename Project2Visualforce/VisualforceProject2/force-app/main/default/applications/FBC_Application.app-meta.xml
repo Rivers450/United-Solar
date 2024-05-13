@@ -15,7 +15,6 @@
     <label>FBC Application</label>
     <navType>Standard</navType>
     <tabs>Visualforce_Home_Page</tabs>
-    <tabs>Visualforce_Opportunity_Page</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FBC_Application_UtilityBar</utilityBar>
 </CustomApplication>

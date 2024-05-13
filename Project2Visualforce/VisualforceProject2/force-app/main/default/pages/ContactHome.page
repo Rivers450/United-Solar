@@ -1,0 +1,10 @@
+<apex:page >
+
+<h1>Welcome to FBC Home page</h1>
+
+<h2>Please click on a link below to navigate to our Visualforce Pages</h2>
+
+<apex:outputLink value="apex/ContactVFPage">Contact Records List</apex:outputLink>
+
+
+</apex:page>

@@ -1,0 +1,18 @@
+<apex:page standardController="Lead">
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <apex:pageBlock title="{! Lead.name}">
+        <apex:form >
+            <apex:pageBlockSection >
+                <p> Lead Name {! Lead.Name }</p>
+                <p> Lead Company: {! Lead.Company }</p>
+                <p> Lead Phone: {! Lead.Phone }</p>
+                <p> Lead Status: {! Lead.Status }</p>
+                <p> Lead Leadsource: {! Lead.leadsource}</p>
+                <p> Lead Rating: {! Lead.rating}</p>
+                <p> Lead Pronouns: {! Lead.pronouns}</p>
+            </apex:pageBlockSection>
+            <apex:commandButton value="Delete Lead Record" action="{!delete}"/>
+        </apex:form>
+    </apex:pageBlock>
+    <apex:outputLink value="apex/LeadVFPage">Back to Lead List</apex:outputLink>
+</apex:page>

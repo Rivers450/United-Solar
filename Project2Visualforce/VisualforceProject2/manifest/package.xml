@@ -36,6 +36,7 @@
     <version>59.0</version>
     -->
      <types>
+     <!--
         <members>OpportunityVFPage</members>
         <members>OpportunityRecordVFPage</members>
         <members>OpportunityCreateVFPage</members>
@@ -43,6 +44,8 @@
         <member>LeadVFPage</member>
         <member>ContactVFPage</member>
         <members>Home</members>
+        -->
+        <members>*</members>
         <name>ApexPage</name>
     </types>
     <types>
@@ -52,6 +55,10 @@
     <types>
         <members>*</members>
         <name>StaticResource</name>
+    </types>
+     <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
     </types>
 
 </Package>

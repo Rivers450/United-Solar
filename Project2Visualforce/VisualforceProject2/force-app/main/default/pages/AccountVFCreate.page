@@ -1,0 +1,18 @@
+<apex:page standardController="Account">
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <apex:pageBlock title="Create New Account">
+        <apex:form >
+            <apex:pageBlockSection >
+                <apex:inputField value="{!Account.name}" required="true"></apex:inputField>
+                <apex:inputField value="{!Account.parentId}" required="false"></apex:inputField>
+                <apex:inputField value="{!Account.rating}" required="false"></apex:inputField>
+                <apex:inputField value="{!Account.phone}" required="false"></apex:inputField>
+                <apex:inputField value="{!Account.ownership}" required="false"></apex:inputField>
+                <apex:inputField value="{!Account.industry}" required="false"></apex:inputField>
+
+            </apex:pageBlockSection>
+            <apex:commandButton value="Save Account Record" action="{!save}" />
+        </apex:form>
+    </apex:pageBlock>
+    <apex:outputLink value="apex/AccountVFPage">Back to Account List</apex:outputLink>
+</apex:page>

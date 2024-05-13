@@ -1,0 +1,32 @@
+<apex:page standardController="Contact" recordSetVar="conts">
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <apex:form >
+        <apex:pageBlock >
+            <apex:outputLink value="apex/ContactCreateVFPage">
+                    Create a New Contact
+            </apex:outputLink>
+            <apex:pageBlockSection >
+                <apex:pageBlockTable value="{! conts}" var="cont">
+                    <apex:column >
+                        <apex:outputLink value="apex/ContactRecordVFPage">
+                        {! cont.name}
+                            <apex:param name="id" value="{!cont.id}" />
+                        </apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{! cont.FirstName}" />
+                    <apex:column value="{! cont.LastName}" />
+                    <apex:column value="{! cont.Account.Name}" />
+                    <apex:column value="{! cont.Phone}" />
+                    <apex:column value="{! cont.Email}" />
+                    <apex:column value="{! cont.Job_Position__c}" />
+                    <apex:column value="{! cont.Owner.name}" />
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <apex:outputLink value="apex/Home">Back to Home Page</apex:outputLink>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Previous" action="{!Previous}" />
+                <apex:commandButton value="Next" action="{!next}" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

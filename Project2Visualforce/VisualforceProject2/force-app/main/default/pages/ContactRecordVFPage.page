@@ -1,0 +1,18 @@
+<apex:page standardController="Contact">
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <apex:pageBlock title="{! contact.LastName}">
+        <apex:form >
+            <apex:pageBlockSection >
+                <p> Owner ID: {! Contact.Owner.name }</p>
+                <p> Contact First Name: {! contact.FirstName }</p>
+                <p> Contact Last Name: {! contact.LastName }</p>
+                <p> Email: {! contact.Email}</p>
+                <p> Phone: {! contact.Phone}</p>
+                <p> Account Name {! Contact.Account.name }</p>
+
+            </apex:pageBlockSection>
+            <apex:commandButton value="Delete Contact Record" action="{!delete}"/>
+        </apex:form>
+    </apex:pageBlock>
+    <apex:outputLink value="apex/ContactVFPage">Back to Contact List</apex:outputLink>
+</apex:page>

@@ -1,0 +1,21 @@
+<apex:page standardController="Lead">
+    <apex:image id="theImage" url="{!$Resource.FBC_Logo}" width="100" height="100" alt="FBC Logo" />
+    <apex:pageBlock title="Create New Account">
+        <apex:form >
+            <apex:pageBlockSection >
+                <apex:inputField value="{!Lead.FirstName}" required="false"></apex:inputField>
+                <apex:inputField value="{!Lead.LastName}" required="true"></apex:inputField>
+                <apex:inputField value="{!Lead.Company}" required="true"></apex:inputField>
+                <apex:inputField value="{!Lead.Status}" required="true"></apex:inputField>
+                <apex:inputField value="{!Lead.phone}" required="false"></apex:inputField>
+                <apex:inputField value="{!Lead.leadsource}" required="false"></apex:inputField>
+                <apex:inputField value="{!Lead.rating}" required="false"></apex:inputField>
+                <apex:inputField value="{!Lead.pronouns}" required="false"></apex:inputField>
+
+                
+            </apex:pageBlockSection>
+            <apex:commandButton value="Save Lead Record" action="{!save}" />
+        </apex:form>
+    </apex:pageBlock>
+    <apex:outputLink value="apex/LeadVFPage">Back to Lead List</apex:outputLink>
+</apex:page>
